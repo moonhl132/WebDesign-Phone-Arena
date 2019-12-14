@@ -1,0 +1,429 @@
+*{
+  border: 0px;
+  margin: 0px;
+}
+#container{
+  height: 100%;
+  width:100%;
+}
+#wrapper{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, black, #444, black) ;
+  float: left;
+}
+/* ===== //// this is content banner area \\\\ ===== */
+#content_banner{
+  width: 100%;
+  height: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background: linear-gradient(to right, black, #444, black);
+  float: left;
+}
+#content_banner img{
+  width: 20%;
+  height: 100%;
+  border-radius: 50%;
+  margin-left: 5%;
+  float: left;
+}
+#content_banner p{
+  width: 60%;
+  height: 100%;
+  color: white;
+  float: right;
+  font-size: 17px;
+  margin-right: 7%;
+  overflow: hidden;
+  overflow-y: hidden;
+}
+#content_banner h1{
+
+    width: 60%;
+    height: 100%;
+    color: white;
+    float: right;
+    font-size: 30px;
+    margin-right: 7%;
+    overflow: hidden;
+    overflow-y: hidden;
+    margin-bottom: 1%;
+}
+
+/* ===== ///// MOVING TEXT AREA \\\\ ===== */
+#moving_text{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+#moving_text marquee{
+  color: white;
+  border-bottom: 2px solid red;
+}
+/* ===== ///// END OF MOVING TEXT \\\\ ===== */
+
+/* ==== ///// THI IS LEFT SIDE, CAN BE USED FOR NAVIGATION BAR \\\\\ ======*/
+#left_side{
+  height: 100%;
+  border-right: 5px solid black;
+  width: 20%;
+  left: 0;
+  float: left;
+  margin-top: 1%;
+  padding-right: 1%;
+}
+.content_left{
+  width: 100%;
+  height: 100%;
+  background: black;
+  margin-bottom: 2%;
+  border-bottom: 2px solid red;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+#left_side a{
+  text-decoration: none;
+}
+.content_left p{
+  color: white;
+  float: left;
+}
+.content_left:hover{
+    box-shadow: 0px 1px 20px #990000;
+}
+
+/* ==== ///// END OF LEFT SIDE \\\\\ ===== */
+
+
+
+/*===== ///// RIGHT SIDE, LIST OF THE CONTENT (* NOTES : 3 CONTENT PER ROW) \\\\\ ===== */
+#right_side{
+  width: 100%;
+  height: 100%;
+  margin-left: 21%;
+  margin-top: 1%;
+}
+.content_right{/* content per row recomended = 3 */
+  height : 100%;
+  width: 25%;
+  background: linear-gradient(to right, black, #444, black) ;
+  float: left;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  border-radius: 3%;
+  border-bottom: 2px solid red;
+}
+.content_right:hover{
+  box-shadow: 0px 1px 40px #990000;
+
+}
+.content_right img{
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+.content_right p{/* this paragraph used for Title */
+  width: 100%;
+  text-align: center;
+  font-size:15px;
+  float: left;
+  color: white;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+/* ====== //// END OF STYLING CSS //// =====  */
+
+
+/* ===== //// RESPONSIVE STYLING CSS //// ===== */
+
+@media screen and (min-width : 320px){
+
+  #content_banner img{
+    width: 40%;
+    margin-left: 30%;
+  }
+  #content_banner h1{
+    width: 100%;
+    margin-top: 5%;
+    font-size: 15px;
+    text-align: center;
+    margin-right: 0;
+  }
+  #content_banner p{
+    font-size: 13px;
+    text-align: center;
+    margin-right: 20%;
+  }
+  #moving_text marquee{
+    font-size: 12px;
+  }
+  #left_side{
+    width: 100%;
+    border: none;
+  }
+  .content_left{
+    width: 20%;
+    float: left;
+    border-radius: 50px;
+    font-size: 12px;
+    padding: 1% 0 1% 0;
+  }
+  #right_side{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .content_right{
+    width: 80%;
+    margin-bottom: 5%;
+  }
+  .content_right p{
+    font-size: 12px;
+  }
+}
+  @media screen and (min-width : 375px){
+
+    #content_banner img{
+      width: 40%;
+      margin-left: 30%;
+    }
+    #content_banner h1{
+      width: 100%;
+      margin-top: 5%;
+      font-size: 30px;
+      text-align: center;
+      margin-right: 0;
+    }
+    #content_banner p{
+      font-size: 15px;
+      text-align: center;
+      margin-right: 20%;
+    }
+    #moving_text marquee{
+      font-size: 15px;
+    }
+    #left_side{
+      width: 100%;
+      border: none;
+    }
+    .content_left{
+      width: 20%;
+      float: left;
+      border-radius: 50px;
+      font-size: 15px;
+      padding: 1% 0 1% 0;
+    }
+    #right_side{
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    .content_right{
+      width: 80%;
+      margin-bottom: 5%;
+    }
+    .content_right p{
+      font-size: 15px;
+    }
+  }
+    @media screen and (min-width : 768px){
+
+      #content_banner img{
+        width: 40%;
+        margin-left: 30%;
+      }
+      #content_banner h1{
+        width: 100%;
+        margin-top: 5%;
+        font-size: 40px;
+        text-align: center;
+        margin-right: 0;
+      }
+      #content_banner p{
+        font-size: 20px;
+        text-align: center;
+        margin-right: 20%;
+      }
+      #moving_text marquee{
+        font-size: 20px;
+      }
+      #left_side{
+        width: 100%;
+        border: none;
+      }
+      .content_left{
+        width: 20%;
+        float: left;
+        border-radius: 50px;
+        font-size: 20px;
+        padding: 1% 0 1% 0;
+      }
+      #right_side{
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      .content_right{
+        width: 80%;
+        margin-bottom: 5%;
+      }
+      .content_right p{
+        font-size: 25px;
+      }
+
+}
+@media screen and (min-width : 1024px){
+
+  #content_banner img{
+    width: 20%;
+    height: 100%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  #content_banner p{
+    width: 60%;
+    height: 100%;
+    color: white;
+    float: right;
+    font-size: 15px;
+    margin-right: 7%;
+
+  }
+  #content_banner h1{
+      width: 60%;
+      height: 100%;
+      margin-right: 7%;
+      font-size: 30px;
+  }
+  #moving_text marquee{
+    font-size: 15px;
+  }
+  #left_side{
+    width: 20%;
+    height: 100%
+    border: 1% solid black;
+  }
+  .content_left{
+    width: 100%;
+    float: left;
+    border-radius: 50px;
+    font-size: 15px;
+    padding: 1% 0 1% 0;
+  }
+
+
+  /*===== ///// RIGHT SIDE, LIST OF THE CONTENT (* NOTES : 3 CONTENT PER ROW) \\\\\ ===== */
+  #right_side{
+    width: 100%;
+    height: 100%;
+    margin-left: 21%;
+    margin-top: 1%;
+  }
+  .content_right{/* content per row recomended = 3 */
+    height : 100%;
+    width: 25%;
+    background: linear-gradient(to right, black, #444, black) ;
+    float: left;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    border-radius: 3%;
+    border-bottom: 2px solid red;
+  }
+  .content_right:hover{
+    box-shadow: 0px 1px 40px #990000;
+
+  }
+  .content_right img{
+    width: 100%;
+    height: 100%;
+    float: left;
+  }
+  .content_right p{/* this paragraph used for Title */
+    width: 100%;
+    text-align: center;
+    font-size:15px;
+    float: left;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+}
+@media screen and (min-width : 1440px){
+
+  #content_banner img{
+    width: 20%;
+    height: 100%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  #content_banner p{
+    width: 60%;
+    height: 100%;
+    color: white;
+    float: right;
+    font-size: 17px;
+    margin-right: 7%;
+
+  }
+  #content_banner h1{
+      width: 60%;
+      height: 100%;
+      margin-right: 7%;
+  }
+  #moving_text marquee{
+    font-size: 20px;
+  }
+  #left_side{
+    width: 20%;
+    height: 100%
+    border: 1% solid black;
+  }
+  .content_left{
+    width: 100%;
+    float: left;
+    border-radius: 50px;
+    font-size: 20px;
+    padding: 1% 0 1% 0;
+  }
+
+
+  /*===== ///// RIGHT SIDE, LIST OF THE CONTENT (* NOTES : 3 CONTENT PER ROW) \\\\\ ===== */
+  #right_side{
+    width: 100%;
+    height: 100%;
+    margin-left: 21%;
+    margin-top: 1%;
+  }
+  .content_right{/* content per row recomended = 3 */
+    height : 100%;
+    width: 25%;
+    background: linear-gradient(to right, black, #444, black) ;
+    float: left;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    border-radius: 3%;
+    border-bottom: 2px solid red;
+  }
+  .content_right:hover{
+    box-shadow: 0px 1px 40px #990000;
+
+  }
+  .content_right img{
+    width: 100%;
+    height: 100%;
+    float: left;
+  }
+  .content_right p{/* this paragraph used for Title */
+    width: 100%;
+    text-align: center;
+    font-size:15px;
+    float: left;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+}
