@@ -133,6 +133,7 @@ padding: 0;
 #container{
   height: 100%;
   width:100%;
+
 }
 #wrapper{
   width: 100%;
@@ -141,7 +142,7 @@ padding: 0;
   float: left;
 }
 /* ===== //// this is content banner area \\\\ ===== */
-#content_banner{
+#content_banner{ /* located under the menu bar */
   width: 100%;
   height: 100%;
   padding-top: 5%;
@@ -165,6 +166,7 @@ padding: 0;
   margin-right: 7%;
   overflow: hidden;
   overflow-y: hidden;
+  text-align: justify;
 }
 #content_banner h1{
 
@@ -177,10 +179,11 @@ padding: 0;
     overflow: hidden;
     overflow-y: hidden;
     margin-bottom: 1%;
+    margin-top: 5%;
 }
 
 /* ===== ///// MOVING TEXT AREA \\\\ ===== */
-#moving_text{
+#moving_text{ /* located under content banner */
   width: 100%;
   height: 100%;
   background-color: black;
@@ -249,7 +252,7 @@ padding: 0;
   box-shadow: 0px 1px 40px #990000;
 
 }
-.content_right img{ 
+.content_right img{  /* image size must be 1:1 ratio */
   width: 100%;
   height: 100%;
   float: left;
@@ -264,12 +267,39 @@ padding: 0;
   padding-bottom: 2%;
 }
 
+/* ===== ///// bacc to top button \\\\\ ====== */
+#btpButton{
+  width: 100%;
+  background:yellow;
+
+}
+#btpButton a{
+color: white;
+}
+
+.back_to_top{
+  width: 10%;
+  background: linear-gradient(to right, black, #444, black) ;
+  border-bottom: 2px solid red;
+  height: 100%;
+  float: right;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 50px;
+  margin-right: 2%;
+  padding: 1% 1% 1% 1%;
+  margin-bottom: 2%;
+}
+.back_to_top:hover{
+  box-shadow: 0px 1px 20px #990000;
+
+}
 /* ====== //// END OF STYLING CSS //// =====  */
 
 
 /* ===== //// RESPONSIVE STYLING CSS //// ===== */
 
-@media screen and (min-width : 320px){
+@media screen and (min-width : 320px)and (max-width:375px){
 
   #content_banner img{
     width: 40%;
@@ -308,12 +338,14 @@ padding: 0;
   .content_right{
     width: 80%;
     margin-bottom: 5%;
+    background: yellow;
   }
   .content_right p{
     font-size: 12px;
   }
+
 }
-  @media screen and (min-width : 375px){
+  @media screen and (min-width : 375px)and (max-width: 768px){
 
     #content_banner img{
       width: 40%;
@@ -357,7 +389,7 @@ padding: 0;
       font-size: 15px;
     }
   }
-    @media screen and (min-width : 768px){
+    @media screen and (min-width : 768px)and (max-width : 1023px){
 
       #content_banner img{
         width: 40%;
@@ -402,7 +434,7 @@ padding: 0;
       }
 
 }
-@media screen and (min-width : 1024px){
+@media screen and (min-width : 1024px)and (max-width: 1100px){
 
   #content_banner img{
     width: 20%;
@@ -441,117 +473,3 @@ padding: 0;
     font-size: 15px;
     padding: 1% 0 1% 0;
   }
-
-
-  /*===== ///// RIGHT SIDE, LIST OF THE CONTENT (* NOTES : 3 CONTENT PER ROW) \\\\\ ===== */
-  #right_side{
-    width: 100%;
-    height: 100%;
-    margin-left: 21%;
-    margin-top: 1%;
-  }
-  .content_right{/* content per row recomended = 3 */
-    height : 100%;
-    width: 25%;
-    background: linear-gradient(to right, black, #444, black) ;
-    float: left;
-    margin-bottom: 1%;
-    margin-left: 1%;
-    border-radius: 3%;
-    border-bottom: 2px solid red;
-  }
-  .content_right:hover{
-    box-shadow: 0px 1px 40px #990000;
-
-  }
-  .content_right img{
-    width: 100%;
-    height: 100%;
-    float: left;
-  }
-  .content_right p{/* this paragraph used for Title */
-    width: 100%;
-    text-align: center;
-    font-size:15px;
-    float: left;
-    color: white;
-    padding-top: 2%;
-    padding-bottom: 2%;
-  }
-}
-@media screen and (min-width : 1440px){
-
-  #content_banner img{
-    width: 20%;
-    height: 100%;
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-  #content_banner p{
-    width: 60%;
-    height: 100%;
-    color: white;
-    float: right;
-    font-size: 17px;
-    margin-right: 7%;
-
-  }
-  #content_banner h1{
-      width: 60%;
-      height: 100%;
-      margin-right: 7%;
-  }
-  #moving_text marquee{
-    font-size: 20px;
-  }
-  #left_side{
-    width: 20%;
-    height: 100%
-    border: 1% solid black;
-  }
-  .content_left{
-    width: 100%;
-    float: left;
-    border-radius: 50px;
-    font-size: 20px;
-    padding: 1% 0 1% 0;
-  }
-
-
-  /*===== ///// RIGHT SIDE, LIST OF THE CONTENT (* NOTES : 3 CONTENT PER ROW) \\\\\ ===== */
-  #right_side{
-    width: 100%;
-    height: 100%;
-    margin-left: 21%;
-    margin-top: 1%;
-  }
-  .content_right{/* content per row recomended = 3 */
-    height : 100%;
-    width: 25%;
-    background: linear-gradient(to right, black, #444, black) ;
-    float: left;
-    margin-bottom: 1%;
-    margin-left: 1%;
-    border-radius: 3%;
-    border-bottom: 2px solid red;
-  }
-  .content_right:hover{
-    box-shadow: 0px 1px 40px #990000;
-
-  }
-  .content_right img{
-    width: 100%;
-    height: 100%;
-    float: left;
-  }
-  .content_right p{/* this paragraph used for Title */
-    width: 100%;
-    text-align: center;
-    font-size:15px;
-    float: left;
-    color: white;
-    padding-top: 2%;
-    padding-bottom: 2%;
-  }
-}
