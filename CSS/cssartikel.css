@@ -1,0 +1,80 @@
+{
+    padding: 0px; 
+    margin: 0px;
+}
+
+.article {
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+}
+
+.article h2 {
+    font-size: 50px;
+    font-weight: 100px;
+    padding: 0px 0 7px 0;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.article p {
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 2%;
+    margin-right: 2%;
+    
+}
+
+
+.article img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+     width: 60%;
+    height: 400px;
+    margin-top: 1%;
+}
+
+#pict a img{
+    width: 31%;
+    height: 225px;
+    float: left;
+    margin-left: 7px;
+    border-radius: 12px;
+    margin-bottom: 2%;
+    margin-top: 2%;
+
+   
+}
+#pict{
+    width: 100%;
+    height: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#pict img:hover{
+        box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+@media screen and (min-width:320px)and (max-width:410px){
+    .article img{
+        height: 250px;
+        width: 80%;
+        
+    }
+    #pict a img{
+        height: 250px;
+        width: 90%;
+    }
+}
+@media screen and (min-width:411px)and (max-width:760px){
+    .article img{
+        height: 250px;
+        width: 80%;
+        
+    }
+    #pict a img{
+        height: 250px;
+        width: 90%;
+    }
+}
