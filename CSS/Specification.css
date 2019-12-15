@@ -1,0 +1,160 @@
+#list {             /* Choices for Large widescreen */
+    float: left;
+    width: 20%;
+    background: white;
+    height: 100%;
+    margin-left: 8px;
+    margin-top: 4px;
+    padding: 0px 5px 0px;
+    
+}
+
+#list img{          /* Recommended that using 1:1 ratio picture */
+    width: 100%;
+    padding: 5px 0px 0px;  
+}
+
+#list h3 a{
+    color: black;
+    padding: 0px 8px 0px;
+    font-size: 20px;  
+    font-family: fantasy;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#list h3 a:hover {
+    color: red;
+       
+}
+
+
+
+.down {         /* Choices for small or potrait */
+    float: left;
+    width: 22.5%;
+    background: white;
+    height: 100%;
+    margin-left: 8px;
+    margin-top: 4px;
+    padding: 0px 5px 0px;
+    
+}
+
+.down img{          /* Recommended that using 1:1 ratio picture */
+    width: 100%;   
+}
+
+.down h3 a{
+    color: black;
+    padding: 0px 8px 0px;
+    font-size: 25px;  
+    font-family: fantasy;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.down h3 a:hover {
+    color: green;
+       
+}
+
+
+
+.phone-banner {         /* Banner and information section */
+    margin: 4px 8px 0px;
+    width: 74%;  
+    float: left;
+}
+.phone-banner img {     /* Product Banner picture [Recommended using 14:9 or 2:1 picture ratio */
+    
+    width: 100%;
+    height: auto;
+}
+
+.phone-banner table{    /* For detail and infromation */
+    width: 100%;   
+    
+}
+.phone-banner table, tr, td{
+    background: white;
+    font-family: Arial;
+    border-bottom: 2px solid grey;
+    margin-bottom: 10px;
+}
+    
+
+.navigate-1 a{          /*Addtional Navigation Button */
+    float: left;
+    color: white;
+    padding: 4px 0px 4px;
+    width: 25%;
+    background: #000;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 20px;
+    text-decoration: none;
+}
+.navigate-1 a:hover {
+    color: red;
+
+}
+
+.navigate-2 a{          /*Addtional Navigation Button */
+    float: right;
+    color: white;
+    padding: 4px 0px 4px;
+    width: 25%;
+    background: #000;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 20px;
+    text-decoration: none;
+}
+.navigate-2 a:hover {
+    color: red;
+
+}
+
+@media screen and (min-width: 360px) { /* for Samsung S5 360x640px */
+    #list {
+        display: none;
+        }
+    
+    .phone-banner {
+        width: 98%;
+        font-size: 25px;
+        }
+    
+    .navigate-1 a{
+        font-size: 25px;
+       
+        }
+}
+@media screen and (min-width: 768px){   /* for Tablet (Ipad) 768x1024 */
+        .phone-banner {
+        font-size: 20px;
+        }
+    
+        .navigate-1 a{
+        font-size: 22px;
+       
+        }
+}
+@media screen and (min-width: 1024px) { /* for Desktop or big tablet (Ipad Pro) 1024x1366px */
+    #list {
+     display: block;
+        }
+    .phone-banner {
+        width: 75.5%;
+        font-size: 15px;
+        }
+    .down {
+        display: none;
+        }
+    .navigate-1 a{
+        font-size: 20px;
+        
+        }
+}
+
