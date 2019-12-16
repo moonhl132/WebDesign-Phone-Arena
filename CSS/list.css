@@ -235,14 +235,17 @@ padding: 0;
 
 /*===== ///// RIGHT SIDE, LIST OF THE CONTENT (* NOTES : 3 CONTENT PER ROW) \\\\\ ===== */
 #right_side{
-  width: 100%;
+  width: 70%;
   height: 100%;
-  margin-left: 21%;
   margin-top: 1%;
+  float: right;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  margin-top: 2%;
 }
 .content_right{/* content per row recomended = 3 */
   height : 100%;
-  width: 25%;
+  width: 30%;
   background: linear-gradient(to right, black, #444, black) ;
   float: left;
   margin-bottom: 1%;
@@ -272,7 +275,7 @@ padding: 0;
 /* ===== ///// bacc to top button \\\\\ ====== */
 #btpButton{
   width: 100%;
-  background:yellow;
+  float: right;
 
 }
 #btpButton a{
